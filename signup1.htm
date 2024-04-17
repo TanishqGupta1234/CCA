@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="Omar" name="viewport">
+    <title>Sign up page</title>
+    <link rel="stylesheet" href="signup.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="title">रोगी डेटा</div>
+        <form action="/action_page.php">
+            <div class="userinfo">
+                <div class="input">
+                    <span class="details"><h3>पहला नाम</h3></span>
+                    <input type="text" placeholder=" अपना पहला नाम दर्ज करें" autocomplete="on" required>
+                </div>
+                <div class="input">
+                    <span class="details"> <h3>उपनाम</h3></span>
+                    <input type="text" placeholder="अपना अंतिम नाम दर्ज करें" autocomplete="on" required>
+                </div>
+                <div class="input" style="align-items: center;">
+                    <span class="details"><h3>फ़ोन नंबर</h3></span>
+                    <input type="tel" id="phonenumber" name="phonenumber" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" autocomplete="on" required>
+                </div>
+            </div>
+            
+            <div class="button">
+                <a href="gender1.html" target="_self">
+                <input type="button" value="जमा करना"></a>
+            </div>
+        </form>
+        <!-- Google Authentication Button -->
+        <div class="google-auth">
+            <a href="/auth/google" class="btn-google">Google के साथ साइन अप करें</a>
+        </div>
+    </div>
+</body>
+</html>
